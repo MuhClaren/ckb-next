@@ -685,7 +685,7 @@ static QHash<QString, Key> getMap(KeyMap::Model model, KeyMap::Layout layout){
         }
         for(const Key* key = K65TopRow; key < K65TopRow + K65_TOP_COUNT; key++)
             map[key->name] = *key;
-
+    // don't remap the fn key for K65 RGB else it breaks the lighting
       //  map.remove("rwin");
       //  map["fn"] = KStrafeKeys[3];
       //  map["fn"].x -= 12;
