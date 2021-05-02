@@ -686,9 +686,9 @@ static QHash<QString, Key> getMap(KeyMap::Model model, KeyMap::Layout layout){
         for(const Key* key = K65TopRow; key < K65TopRow + K65_TOP_COUNT; key++)
             map[key->name] = *key;
 
-        map.remove("rwin");
-        map["fn"] = KStrafeKeys[3];
-        map["fn"].x -= 12;
+      //  map.remove("rwin");
+      //  map["fn"] = KStrafeKeys[3];
+      //  map["fn"].x -= 12;
 
         if(KeyMap::isJP(layout))
             patchJP106fn(map);
